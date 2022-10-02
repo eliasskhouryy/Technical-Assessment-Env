@@ -40,6 +40,8 @@ export default function Create() {
 				<h3>End date & time</h3>
 				<input type="datetime-local" id="datePickerId" name="meeting-time" value={minDate2} min={minDate2} onChange={(e) => setDateTo(e.target.value)} />
 				<input ref={ref} placeholder="Enter your location" onChange={(e) => setLocation(e.target.value)} />
+				<h3>Add Image</h3>
+
 				<input className="customFile" type="file" accept="image/png, image/jpeg" />
 				<button>Submit</button>
 			</form>

@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<div className="homeContainer">
 			<div className="leftSide">
-				<img src="landing-page.svg" alt="" />
+				<img src="/landing-page.svg" alt="" />
 			</div>
 			<div className="rightSide">
 				<h1>
@@ -22,7 +22,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="leftSide2">
-				<img src="landing-page.svg" alt="" />
+				<img src="/landing-page.svg" alt="" />
 				<div className="button">
 					<button onClick={() => navigate('/create')}>&#127881; Create my event</button>
 				</div>
