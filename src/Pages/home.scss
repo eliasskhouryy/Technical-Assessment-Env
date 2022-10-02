@@ -1,0 +1,125 @@
+.homeContainer {
+	background: linear-gradient(0deg, #f6f2ff, #f6f2ff), #fbfaff;
+	display: flex;
+	justify-content: space-between;
+	min-height: 100vh;
+	.leftSide2 {
+		display: none;
+	}
+	.leftSide {
+		height: 100%;
+		margin: auto auto;
+		img {
+			filter: drop-shadow(0px 0px 46.8696px rgba(0, 0, 0, 0.05));
+		}
+	}
+
+	.rightSide {
+		height: 100%;
+		margin: auto auto;
+		text-align: right;
+		h1 {
+			width: 571px;
+			font-family: 'Helvetica';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 64px;
+			line-height: 64px;
+			span {
+				background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		p {
+			font-family: 'Helvetica';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 28px;
+			width: 571px;
+			padding-left: 40px;
+			padding-top: 10px;
+		}
+		button {
+			border: none;
+			margin-top: 10px;
+			width: 320px;
+			height: 55px;
+			gap: 10px;
+			font-family: 'Helvetica';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 23px;
+			color: #ffffff;
+			background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+			border-radius: 10px;
+			cursor: pointer;
+			transition: 0.7s;
+
+			&:hover {
+				box-shadow: inset 18em 0 0 0 #501fc1;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.homeContainer {
+		display: block;
+		width: 100vw;
+		min-height: 100vh;
+		text-align: center;
+		.displayNone {
+			display: none;
+		}
+		.leftSide {
+			display: none;
+		}
+		.leftSide2 {
+			padding: 10px 30px 30px 30px;
+			display: block;
+			width: 100vw;
+			text-align: center;
+			img {
+				margin: 0 auto;
+				width: 311px;
+				filter: drop-shadow(0px 0px 46.8696px rgba(0, 0, 0, 0.05));
+			}
+			button {
+				border: none;
+				margin-top: 50px;
+				width: 320px;
+				height: 55px;
+				font-family: 'Helvetica';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 23px;
+				color: #ffffff;
+				background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+				border-radius: 10px;
+				cursor: pointer;
+				transition: 0.7s;
+
+				&:hover {
+					box-shadow: inset 18em 0 0 0 #501fc1;
+				}
+			}
+		}
+	}
+
+	.rightSide {
+		padding: 40px;
+		width: 100vw;
+		h1 {
+			text-align: center;
+			margin: 0 auto;
+		}
+		p {
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+}
